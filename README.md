@@ -9,7 +9,11 @@ var anti = AntiCheatPrefs.new()
 
 or - 或者：
 
-var anti = AntiCheatPrefs.new("key or null",AntiCheatPrefs.AntiType.ENCRYPT)
+var anti = AntiCheatPrefs.new("key",AntiCheatPrefs.AntiType.ENCRYPT)
+
+or
+
+var anti = AntiCheatPrefs.new(null, AntiCheatPrefs.AntiType.ENCRYPT)
 
 
 Explanation: - 说明：
@@ -20,11 +24,11 @@ AntiCheatPrefs.AntiType.CHECK Do not encrypt the value, only check if the data i
 
 Set a variable: - 设置一个变量：
 
-anti.set("hp",100)
+anti.set_val("hp",100)
 
 Read a variable: - 读取一个变量：
 
-anti.get("hp")
+anti.get_val("hp")
 
 
 Operators: (can only be of float or int type) - 运算符：（只能是float或者int类型）
